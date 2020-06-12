@@ -1,3 +1,4 @@
+# fungsi untuk print result ke terminal
 def printResultToTerminal(board):
     for i in range(9):
         if (i%3==0 and i>0):
@@ -12,6 +13,7 @@ def printResultToTerminal(board):
     for e in letakAll5:
         print("( " + str(e[0]) + " , " + str(e[1]) + " )")
 
+# fungsi untuk print result ke file
 def printResultToFile(board, fileName):
     f = open("../result/result_" + fileName, "w")
     for i in range(9):
@@ -29,6 +31,7 @@ def printResultToFile(board, fileName):
 
     f.close()
 
+# fungsi untuk mencari koordinat angka 5
 def findAll5(board):
     res = []
     for i in range(9):

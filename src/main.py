@@ -32,7 +32,7 @@ if (typeInput==1):
 else:   
     # read file image
     fileName = input("masukkan nama file image ('<nama>.png'): ")
-    mat = boardImgToMatrix("../test/" + fileName + ".png")
+    mat = boardImgToMatrix(fileName)
     for i in range(9):
         for j in range(9):
             if (mat[i][j]!=''):
